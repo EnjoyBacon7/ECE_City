@@ -1,6 +1,7 @@
 #ifndef STRUCTURES_H
 #define STRUCTURES_H
 
+#include <time.h> // Ajout ici car il y aura besoin d'un temps seulement si ce fichier est necessaire
 
 // Structures pour les elements residentiels
 typedef struct residentiel {
@@ -80,7 +81,7 @@ typedef struct {
 
     // Infos relative à la partie en tant que sauvegarde
     char* nomPartie;
-    int tempsDeJeu;
+    clock_t tempsDeJeu;
     /// BITMAP* imgSauvegarde;
 
     // Infos relative au plateau de jeu

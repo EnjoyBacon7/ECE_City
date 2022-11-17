@@ -42,7 +42,7 @@ t_partie* chargerPartie(char* nomPartie, int tailleNom) {
 
     // Ouverture du fichier de sauvegarde selon le nom de la partie
     char cheminSauvegarde[100]; // Y sera stocke le chemin du fichier de sauvegarde
-    strcpy(cheminSauvegarde, "sauvegardes/");
+    strcpy(cheminSauvegarde, "C:/Users/Camille/Desktop/ECE_City/sauvegardes/");
     strcat(cheminSauvegarde, nomPartie);
     strcat(cheminSauvegarde, "/");
     strcat(cheminSauvegarde, nomPartie);

@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 #include "extras.h"
 #include "structures.h"
 #include "initPartie.h"
+#include "boucleJeu.h"
 
 // main function
 
@@ -14,6 +16,10 @@ int main() {
     // Test de chargement de partie
     t_partie* partie = chargerPartie("test", 4);
 
+    // Boucle de jeu
+    boucleJeu(partie);
+
+    /* /// TESTING
     // Affichage de la partie ----------------------------------
 
     // Nom de la partie
@@ -55,9 +61,10 @@ int main() {
     printf("UI actuel : %d\n", partie->UIActuel);
 
     // Fin de l'affichage de la partie --------------------------
+    */
 
     // Boucle infinie
-    for(;;);
+    //for(;;);
 
     return 0;
 }
