@@ -1,0 +1,9 @@
+nomPartie
+temps de jeu
+lignes du plateau
+colonnes du plateau
+types des cases:
+000 001 002 010 011 012 020 021 022
+100 101 102 110 111 112 120 121 122 etc...
+les valeurs correspondantes aux cases selon le besoin (niveau pour les residentiel... etc...)
+Argent
