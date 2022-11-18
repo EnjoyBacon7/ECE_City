@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Camille/Desktop/ECE_City
+# Install script for directory: C:/Users/Camille/Documents/GitHub/ECE_City/ECE_City
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Camille/Desktop/ECE_City/cmake-build-debug-mingw/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/cmake-build-debug-mingw/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

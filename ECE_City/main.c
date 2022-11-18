@@ -1,15 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 #include "extras.h"
 #include "structures.h"
 #include "initPartie.h"
 #include "boucleJeu.h"
+#include "menus.h"
+
+#include <allegro.h>
 
 // main function
 
 int main() {
+
+    // ----- Standard allegro stuff -----
+    allegro_init();
+    set_color_depth(desktop_color_depth());
+    if (set_gfx_mode(GFX_AUTODETECT_WINDOWED,1280,720,0,0)!=0)
+    {
+        allegro_message("prb gfx mode");
+        allegro_exit();
+        exit(EXIT_FAILURE);
+    }
+    install_mouse();
+    show_mouse(screen);
+    install_keyboard();
+    install_sound(DIGI_AUTODETECT, MIDI_AUTODETECT, NULL);
+    // ----------------------------------
+
+    menuPrincipal();
 
     printf("Hello World!\n");
 
@@ -67,4 +86,4 @@ int main() {
     //for(;;);
 
     return 0;
-}
+}END_OF_MAIN()

@@ -1,3 +1,3 @@
-C:/Users/Camille/Desktop/ECE_City/cmake-build-debug-mingw/CMakeFiles/ECE_City.dir
-C:/Users/Camille/Desktop/ECE_City/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
-C:/Users/Camille/Desktop/ECE_City/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir
+C:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/cmake-build-debug-mingw/CMakeFiles/ECE_City.dir
+C:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/cmake-build-debug-mingw/CMakeFiles/edit_cache.dir
+C:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/cmake-build-debug-mingw/CMakeFiles/rebuild_cache.dir

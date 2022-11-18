@@ -23,7 +23,6 @@ void boucleJeu(t_partie* partie) {
         // Modifier les valeurs
         // Verifier les touches
     }
-    
 
 
 }

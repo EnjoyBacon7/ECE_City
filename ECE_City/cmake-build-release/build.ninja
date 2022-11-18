@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/Camille/Desktop/ECE_City/cmake-build-release/
+cmake_ninja_workdir = C$:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/cmake-build-release/
 # =============================================================================
 # Object build statements for EXECUTABLE target ECE_City
 
@@ -49,26 +49,38 @@ cmake_ninja_workdir = C$:/Users/Camille/Desktop/ECE_City/cmake-build-release/
 
 build cmake_object_order_depends_target_ECE_City: phony || CMakeFiles/ECE_City.dir
 
-build CMakeFiles/ECE_City.dir/main.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Desktop/ECE_City/main.c || cmake_object_order_depends_target_ECE_City
+build CMakeFiles/ECE_City.dir/main.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/main.c || cmake_object_order_depends_target_ECE_City
   DEP_FILE = CMakeFiles\ECE_City.dir\main.c.obj.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
   OBJECT_DIR = CMakeFiles\ECE_City.dir
   OBJECT_FILE_DIR = CMakeFiles\ECE_City.dir
 
-build CMakeFiles/ECE_City.dir/extras.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Desktop/ECE_City/extras.c || cmake_object_order_depends_target_ECE_City
+build CMakeFiles/ECE_City.dir/extras.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/extras.c || cmake_object_order_depends_target_ECE_City
   DEP_FILE = CMakeFiles\ECE_City.dir\extras.c.obj.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
   OBJECT_DIR = CMakeFiles\ECE_City.dir
   OBJECT_FILE_DIR = CMakeFiles\ECE_City.dir
 
-build CMakeFiles/ECE_City.dir/boucleJeu.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Desktop/ECE_City/boucleJeu.c || cmake_object_order_depends_target_ECE_City
+build CMakeFiles/ECE_City.dir/boucleJeu.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/boucleJeu.c || cmake_object_order_depends_target_ECE_City
   DEP_FILE = CMakeFiles\ECE_City.dir\boucleJeu.c.obj.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
   OBJECT_DIR = CMakeFiles\ECE_City.dir
   OBJECT_FILE_DIR = CMakeFiles\ECE_City.dir
 
-build CMakeFiles/ECE_City.dir/initPartie.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Desktop/ECE_City/initPartie.c || cmake_object_order_depends_target_ECE_City
+build CMakeFiles/ECE_City.dir/initPartie.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/initPartie.c || cmake_object_order_depends_target_ECE_City
   DEP_FILE = CMakeFiles\ECE_City.dir\initPartie.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu99
+  OBJECT_DIR = CMakeFiles\ECE_City.dir
+  OBJECT_FILE_DIR = CMakeFiles\ECE_City.dir
+
+build CMakeFiles/ECE_City.dir/menus.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/menus.c || cmake_object_order_depends_target_ECE_City
+  DEP_FILE = CMakeFiles\ECE_City.dir\menus.c.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu99
+  OBJECT_DIR = CMakeFiles\ECE_City.dir
+  OBJECT_FILE_DIR = CMakeFiles\ECE_City.dir
+
+build CMakeFiles/ECE_City.dir/affichage.c.obj: C_COMPILER__ECE_City_Release C$:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/affichage.c || cmake_object_order_depends_target_ECE_City
+  DEP_FILE = CMakeFiles\ECE_City.dir\affichage.c.obj.d
   FLAGS = -O3 -DNDEBUG -std=gnu99
   OBJECT_DIR = CMakeFiles\ECE_City.dir
   OBJECT_FILE_DIR = CMakeFiles\ECE_City.dir
@@ -81,9 +93,9 @@ build CMakeFiles/ECE_City.dir/initPartie.c.obj: C_COMPILER__ECE_City_Release C$:
 #############################################
 # Link the executable ECE_City.exe
 
-build ECE_City.exe: C_EXECUTABLE_LINKER__ECE_City_Release CMakeFiles/ECE_City.dir/main.c.obj CMakeFiles/ECE_City.dir/extras.c.obj CMakeFiles/ECE_City.dir/boucleJeu.c.obj CMakeFiles/ECE_City.dir/initPartie.c.obj
+build ECE_City.exe: C_EXECUTABLE_LINKER__ECE_City_Release CMakeFiles/ECE_City.dir/main.c.obj CMakeFiles/ECE_City.dir/extras.c.obj CMakeFiles/ECE_City.dir/boucleJeu.c.obj CMakeFiles/ECE_City.dir/initPartie.c.obj CMakeFiles/ECE_City.dir/menus.c.obj CMakeFiles/ECE_City.dir/affichage.c.obj
   FLAGS = -O3 -DNDEBUG
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lmingw32  -lalleg44  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ECE_City.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -96,7 +108,7 @@ build ECE_City.exe: C_EXECUTABLE_LINKER__ECE_City_Release CMakeFiles/ECE_City.di
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Camille\Desktop\ECE_City\cmake-build-release && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D C:\Users\Camille\Documents\GitHub\ECE_City\ECE_City\cmake-build-release && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -107,7 +119,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Camille\Desktop\ECE_City\cmake-build-release && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Camille\Desktop\ECE_City -BC:\Users\Camille\Desktop\ECE_City\cmake-build-release"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Camille\Documents\GitHub\ECE_City\ECE_City\cmake-build-release && "C:\Program Files\JetBrains\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\Camille\Documents\GitHub\ECE_City\ECE_City -BC:\Users\Camille\Documents\GitHub\ECE_City\ECE_City\cmake-build-release"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -125,7 +137,7 @@ build ECE_City: phony ECE_City.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Camille/Desktop/ECE_City/cmake-build-release
+# Folder: C:/Users/Camille/Documents/GitHub/ECE_City/ECE_City/cmake-build-release
 
 build all: phony ECE_City.exe
 

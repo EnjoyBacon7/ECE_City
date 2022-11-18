@@ -18,8 +18,8 @@ t_partie* nouvellePartie(char* nomPartie, int tailleNom, int lignes, int colonne
     nouvellePartie->nomPartie = malloc(sizeof(char) * tailleNom);
     strcpy(nouvellePartie->nomPartie, nomPartie);
     nouvellePartie->tempsDeJeu = 0;
-    nouvellePartie->lignes = 45;
-    nouvellePartie->colonnes = 45;
+    nouvellePartie->lignes = lignes;
+    nouvellePartie->colonnes = colonnes;
     for (int i = 0; i < nouvellePartie->lignes; i++) {
         for (int j = 0; j < nouvellePartie->colonnes; j++) {
             for (int k = 0; k < 3; k++) {
@@ -42,7 +42,7 @@ t_partie* chargerPartie(char* nomPartie, int tailleNom) {
 
     // Ouverture du fichier de sauvegarde selon le nom de la partie
     char cheminSauvegarde[100]; // Y sera stocke le chemin du fichier de sauvegarde
-    strcpy(cheminSauvegarde, "C:/Users/Camille/Desktop/ECE_City/sauvegardes/");
+    strcpy(cheminSauvegarde, "sauvegardes/");
     strcat(cheminSauvegarde, nomPartie);
     strcat(cheminSauvegarde, "/");
     strcat(cheminSauvegarde, nomPartie);
@@ -69,7 +69,7 @@ t_partie* chargerPartie(char* nomPartie, int tailleNom) {
 
     // Allocation du nom de la partie
     nouvellePartie->nomPartie = malloc(sizeof(char) * tailleNom);
-    if (fichierSauvegarde == NULL) {
+    if (!fichierSauvegarde) {
         debug("Erreur lors de l'allocation du nom de la partie");
         exit(1);
     }
@@ -176,7 +176,6 @@ t_partie* chargerPartie(char* nomPartie, int tailleNom) {
                     default:
                         debug("Erreur lors de la lecture du fichier de sauvegarde (probablement corrompue)");
                         exit(1); /// Retour au menu preferable
-                        break;
                 }
             }
         }
