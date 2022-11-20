@@ -37,16 +37,12 @@ t_partie* nouvellePartie(char* nomPartie, int tailleNom, int lignes, int colonne
 
     return nouvellePartie;
 }
-
+/// taillenom inutile
 t_partie* chargerPartie(char* nomPartie, int tailleNom) {
 
     // Ouverture du fichier de sauvegarde selon le nom de la partie
     char cheminSauvegarde[100]; // Y sera stocke le chemin du fichier de sauvegarde
-    strcpy(cheminSauvegarde, "sauvegardes/");
-    strcat(cheminSauvegarde, nomPartie);
-    strcat(cheminSauvegarde, "/");
-    strcat(cheminSauvegarde, nomPartie);
-    strcat(cheminSauvegarde, ".txt");
+    sprintf(cheminSauvegarde, "sauvegardes/%s/%s.txt", nomPartie, nomPartie);
     FILE* fichierSauvegarde = fopen(cheminSauvegarde, "r");
     if (fichierSauvegarde == NULL) {
         debug("Erreur lors de l'ouverture du fichier de sauvegarde");
@@ -69,10 +65,6 @@ t_partie* chargerPartie(char* nomPartie, int tailleNom) {
 
     // Allocation du nom de la partie
     nouvellePartie->nomPartie = malloc(sizeof(char) * tailleNom);
-    if (!fichierSauvegarde) {
-        debug("Erreur lors de l'allocation du nom de la partie");
-        exit(1);
-    }
 
     // Initialisation des valeurs de base de la structure de partie
     strcpy(nouvellePartie->nomPartie, nom);

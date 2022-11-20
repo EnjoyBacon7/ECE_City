@@ -1,5 +1,8 @@
-//
-// Created by Camille on 11/18/2022.
-//
+#include <stdio.h>
+#include <stdlib.h>
+#include <allegro.h>
+
+#include "extras.h"
+#include "structures.h"
 
 #include "affichage.h"
